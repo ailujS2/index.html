@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História de Terror</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>O Mistério da Floresta Sombria</h1>
+        <p>
+            Numa noite fria e sem luar, João se aventurou pela floresta sombria, mesmo após ouvir histórias de pessoas que desapareceram misteriosamente. A floresta era densa, e o silêncio só era interrompido pelo vento que soprava entre as árvores, como um sussurro macabro.
+        </p>
+        <p>
+            Ele caminhava devagar, atento a cada som, até que ouviu passos atrás dele. Quando se virou, nada encontrou. O medo começou a tomar conta, mas João decidiu continuar. Foi então que avistou uma cabana antiga, com as luzes acesas, no meio da escuridão.
+        </p>
+        <p>
+            Ao se aproximar da porta da cabana, sentiu um arrepio percorrer sua espinha. A porta estava entreaberta e, de dentro, vinha um som fraco e constante... uma respiração. Com a mão tremendo, ele empurrou a porta, revelando uma sala vazia.
+        </p>
+        <p>
+            Mas o som continuava. Vinha do porão.
+        </p>
+        <button id="continueButton">Continuar...</button>
+    </div>
+
+    <div id="ending" class="hidden">
+        <h2>O Final</h2>
+        <p>
+            João desceu lentamente as escadas do porão, o som da respiração ficando cada vez mais alto. Quando seus pés tocaram o chão gelado do porão, ele sentiu uma presença atrás de si. Antes que pudesse se virar, uma mão fria agarrou seu ombro.
+        </p>
+        <p>
+            O grito de João ecoou pela floresta, mas ninguém jamais o encontrou.
+        </p>
+    </div>
+
+    <script>
+        const continueButton = document.getElementById('continueButton');
+        const ending = document.getElementById('ending');
+
+        continueButton.addEventListener('click', () => {
+            document.querySelector('.container').classList.add('hidden');
+            ending.classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
